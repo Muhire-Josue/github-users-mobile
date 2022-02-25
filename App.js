@@ -1,12 +1,11 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from "@react-navigation/stack";
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import {SearchScreen} from './src/screens/SearchScreen'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <SearchScreen />
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
     </View>
   );
 }
