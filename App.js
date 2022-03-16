@@ -2,6 +2,7 @@ import * as React from "react";
 import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { ShowResult } from './src/screens/ShowResult';
 import SearchScreen from "./src/screens/SearchScreen";
 
 
@@ -12,6 +13,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Search" component={SearchScreen} />
+        <Stack.Screen name="ShowResult" component={ShowResult} />
       </Stack.Navigator>
     </NavigationContainer>
   );
